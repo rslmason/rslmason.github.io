@@ -1,0 +1,107 @@
+<!DOCTYPE HTML>
+<html>
+<style>
+#fleetbox {
+	float:left;
+	width:33%;
+	height:380px;
+}
+
+#bottomoutput {
+	clear:both;
+}
+p {
+  font-family: "Lucida Console", Monaco, monospace;
+}
+
+h1 {
+  font-family: "Lucida Console", Monaco, monospace;
+}
+
+label {
+	font-family: "Lucida Console", Monaco, monospace;
+}
+
+</style>
+
+<body>
+
+  <H1>TI4 Battle Simulator</p>
+  
+  <p id="outputParagraph">Fleet One: 0.0% Fleet Two: 0.0% Tie 0.0%</p>
+  
+  
+  <div id = "fleets">               
+            <div id = "fleetbox"> 
+			<p>Fleet One</p>
+				<ul>
+					<li>
+						<label>fighters:</label>
+						<input type="number" id="oneFighter" value="0" min="0" max="100">
+					</li>
+					<li>
+						<label>destroyers:</label>
+						<input type="number" id="oneDestroyer" value="0" min="0" max="100">
+					</li>
+					<li>
+						<label>cruisers:</label>
+						<input type="number" id="oneCruiser" value="0" min="0" max="100">
+					</li>
+					<li>
+						<label>dreadnoughts:</label>
+						<input type="number" id="oneDreadnought" value="0" min="0" max="100">
+					</li>
+					<li>
+						<label>carriers:</label>
+						<input type="number" id="oneCarrier" value="0" min="0" max="100">
+					</li>
+					<li>
+						<label>war suns:</label>
+						<input type="number" id="oneWarSun" value="0" min="0" max="100">
+					</li>
+				</ul>
+			</div>  
+              
+            <div id = "fleetbox"> 
+			<p>Fleet Two</p>
+				<ul>
+					<li>
+						<label>fighters:</label>
+						<input type="number" id="twoFighter" value="0" min="0" max="100">
+					</li>
+					<li>
+						<label>destroyers:</label>
+						<input type="number" id="twoDestroyer" value="0" min="0" max="100">
+					</li>
+					<li>
+						<label>cruisers:</label>
+						<input type="number" id="twoCruiser" value="0" min="0" max="100">
+					</li>
+					<li>
+						<label>dreadnoughts:</label>
+				 		<input type="number" id="twoDreadnought" value="0" min="0" max="100">
+					</li>
+					<li>
+						<label>carriers:</label>
+						<input type="number" id="twoCarrier" value="0" min="0" max="100">
+					</li>
+					<li>
+						<label>war suns:</label>
+						<input type="number" id="twoWarSun" value="0" min="0" max="100">
+					</li>
+				</ul>
+            </div> 
+              
+        </div> 
+
+<div id = "bottomoutput">		
+<button id="theButton">Battle!</button>
+<p id="outputParagraphTwo">Total Iterations of These Fleet Configuations: 0</p>
+</div>
+
+<script src="twilightimperium.js"></script>
+
+
+</body>
+
+</html>
